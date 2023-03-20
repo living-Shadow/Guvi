@@ -14,7 +14,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Register</title>
+    <title>Guvi-Register</title>
 
     <meta name="description" content="" />
 
@@ -35,8 +35,6 @@
     <!-- Core CSS -->
     <link rel="stylesheet" href="css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="css/demo.css" />
-
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="css/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
@@ -49,6 +47,7 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="js/bootstrap/config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
 
   <body>
@@ -125,7 +124,7 @@
               <h4 class="mb-2">Adventure starts here 🚀</h4>
               <p class="mb-4">Make your learning easy and fun!</p>
 
-              <form id="registerform" class="mb-3" >
+              <form id="registerform" class="mb-3" method="post">
                 <div class="mb-3">
                   <label for="username" class="form-label">Username</label>
                   <input
@@ -139,7 +138,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" />
                 </div>
                 <div class="mb-3 form-password-toggle">
                   <label class="form-label" for="password">Password</label>
@@ -178,8 +177,8 @@
                     </label>
                   </div>
                 </div>
-                <div id="error" class="alert alert-danger d-none"></div>
-                <button class="btn btn-primary d-grid w-100" id="submit" type="submit">Sign up</button>
+                <div id="error" class="alert d-none"></div>
+                <button class="btn btn-primary d-grid w-100" id="submit" >Sign up</button>
               </form>
 
               <p class="text-center">
@@ -198,7 +197,7 @@
     <!-- / Content -->
 
     <!-- Core JS -->
-    <script src="css/libs/jquery/jquery.js"></script>
+    <!-- <script src="css/libs/jquery/jquery.js"></script> -->
     <script src="css/libs/popper/popper.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>
     <script src="css/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
